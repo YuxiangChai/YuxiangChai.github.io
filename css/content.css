@@ -1,0 +1,33 @@
+.section-content {
+    width: 100%;
+    padding: 60px 0 60px 0;
+    background-color: beige;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content {
+    width: 60%;
+    position: relative;
+    margin: auto;
+}
+
+.divider {
+    border-top: 1px;
+    width: 80%;
+    border-color: black;
+}
+
+.intro {
+    width: 60%;
+    position: relative;
+    margin: auto;
+}
+
+.content h2 {
+    font-size: 40px;
+}
+
+.content p {
+    font-size: 25px;
+}
