@@ -1,7 +1,7 @@
 .section-content {
     width: 100%;
     padding: 60px 0 60px 0;
-    background-color: beige;
+    background-color: rgb(243, 243, 220);
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -16,11 +16,16 @@
     border-top: 1px;
     width: 80%;
     border-color: black;
+    margin: 60px auto;
 }
 
 .intro {
-    width: 60%;
     position: relative;
+    margin: auto;
+}
+
+#intro-content {
+    width: 50%;
     margin: auto;
 }
 
