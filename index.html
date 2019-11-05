@@ -1,56 +1,293 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta lang='en'>
-        <title>Home Page</title>
-        <link rel="stylesheet" href="./css/navi.css">
-        <link rel="stylesheet" href="./css/cover.css">
-        <link rel="stylesheet" href="./css/content.css">
-    </head>
+<!doctype html>
+<html lang="en">
 
-    <body>
-        <section class="cover">           
-            <div class="bg-img">
-                <div class="cover-words">
-                    <h1 class="title">Welcome to my page</h1>               
-                </div>
-            </div>              
-        </section>
-        <button id='nav-button'>
-            <span>Menu</span>
-        </button>
-        <nav id='nav-main'>
-            <ul>
-                <li>Home</li>
-                <li>Introduction</li>
-                <li>About</li>
-            </ul>
-        </nav>
-        
-        <section class="section-content">
-            <div class="content" id="intro">
-                <div class="intro">
-                    <h2 id="intro-title">Introduction</h2>
-                    <hr class="divider">
-                    <p id="intro-content">Hi, I am an undergraduate student in New York University, Tandon School of Engineering, major in Computer Science.</p>
-                    <hr class="divider">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/css/responsive-tabs.css"> -->
+    <title>Junjie Ge</title>
+</head>
+
+<body>
+    <div id="loaderBg">
+        <span id="loader">
+            <span id="loader-inner"></span>
+        </span>
+    </div>
+    <header id="Wlcm">
+        <video autoplay muted loop id="myVideo">
+            <source src="img/nycMontage.mp4" type="video/mp4">
+        </video>
+        <div id="wlcmBox">
+            <div id="wlcmName">Yuxiang Chai</div>
+            <hr class="wlcmLine">
+            <div id="wlcmDscptn">I'm a <span id="wlcmTW"></span></div>
+        </div>
+        <a href="#me" class="scroll-down" address="true"></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#me" class="sideNav"></a></li>
+            <li><a href="#proj" class="sideNav"></a></li>
+            <li><a href="#skill" class="sideNav"></a></li>
+            <li><a href="#exp" class="sideNav"></a></li>
+            <li><a href="#contact" class="sideNav"></a></li>
+        </ul>
+    </nav>
+    <section class="sctn" id="me">
+        <div class="content">
+            <h1>Who am I</h1>
+            <h2>Programmer, Designer, Student</h2>
+            <hr class="horizontalLine">
+            <div id="abtMe">
+                <img src="img/profile.JPG" alt="Avatar" id="profileImg">
+                <div id="myDetail">
+                    <strong>Name:</strong>
+                    <p>Yuxiang Chai</p>
+                    <strong>Age:</strong>
+                    <p>21 years</p>
+                    <strong>Location:</strong>
+                    <p>Brooklyn, NY</p>
                 </div>
             </div>
-        </section>
-        
-        
-        
+            <hr class="horizontalLine">
+            <div style="width: 60%; margin: auto;">
+                <p>Hi, I am an undergraduate student at New York University, Tandon School of Engineering, majoring in Computer Science. I love
+                    music, digital painting, and movies.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sctn sctnOdd" id="proj">
+        <div class="content">
+            <h1>Projects</h1>
+            <h2>"Every Project is an opportunity to learnm to figure out problems and challenges, to invent and
+                reinvent."</h2>
+            <h2>- David Rockwell</h2>
+            <hr class="horizontalLine">
+            <div id="services-tabs">
+                <ul>
+                    <li><a href="#proj1">Fake Instagram</a></li>
+                    <li><a href="#proj2">Video Terminal Player</a></li>
+                    <li><a href="#proj3">CrashSimulator</a></li>
+                </ul>
+                <br>
+                <div id="proj1" class="projTab">
 
+                    <div class="projContainer">
+                        <div>
+                            <img src="img/project1.jpg" alt="project 1">
+                        </div>
+                        <div>
+                            <div class="tabBg">
+                                <h2>01</h2>
+                                <h3>Simplest Web Application of Upload and Share Photos with Friends</h3>
+                                <p>
+                                    This version focuses mostly on backend and database implementation. Simply achieve the following functions:
+                                    log in and log out, upload photos, create groups, add friends, like, share photos with certain friends or groups.
+                                    Haven't beautify the web page.
+                                </p>
+                                <a class="btn" href="https://github.com/YuxiangChai/Fake_ins" target="_blank">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="proj2" class="projTab">
 
+                    <div class="projContainer">
+                        <div>
+                            <img src="img/project2.png" alt="Youtube Thumbnail Downloader">
+                        </div>
+                        <div>
+                            <div class="tabBg">
+                                <h2>02</h2>
+                                <h3>Video Terminal Player</h3>
+                                <p>
+                                  A small Python project that I have made. Using OpenCV to convert video to grayscale images and play it in terminal.
+                                </p>
+                                <a class="btn"
+                                  href="https://github.com/YuxiangChai/Video2Image"
+                                  target="_blank">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="proj3" class="projTab">
 
+                    <div class="projContainer">
+                        <div>
+                            <img src="img/crashsimulator_diagram.png"
+                            alt="crash simulator">
+                        </div>
+                        <div>
+                            <div class="tabBg">
+                                <h2>03</h2>
+                                <h3>Crash Simulator (WiP)</h3>
+                                <p>
+                                  CrashSimulator is a tool that replicates
+                                  “real-world” testing for new and upgraded
+                                  software without the complications of
+                                  “real-world” deployment. The program enables
+                                  software developers to identify
+                                  vulnerabilities in product designs long
+                                  before they are packaged and released.
+                                  Contributed to this project.
+                                </p>
+                                <a class="btn"
+                                  href="https://github.com/pkmoore/rrapper"
+                                  target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sctn" id="skill">
+        <div class="content">
+            <h1>Skills</h1>
+            <h2>"The mind once enlightened cannot again become dark."</h2>
+            <h2>- Thomas Paine</h2>
+            <hr class="horizontalLine">
+            <h3>Languages</h3>
+            <ul class="skills">
+                <div class="gridLeft">
+                    <li class="pct100">English</li>
+                </div>
+                <div class="gridRight">
+                    <li class="pct100">Chinese</li>
+                </div>
+            </ul>
+            <hr class="horizontalLine">
+            <h3>Programming Skills</h3>
+            <ul class="skills">
+                <div class="gridLeft">
+                    <li class="pct100">C++</li>
+                    <li class="pct100">Python</li>
+                    <li class="pct100">MySQL</li>
+                </div>
+                <div class="gridRight">
+                    <li class="pct75">HTML</li>
+                    <li class="pct75">CSS</li>
+                    <li class="pct25">JavaScript</li>
+                </div>
+            </ul>
+            <hr class="horizontalLine">
+            <h3>Others</h3>
+            <ul class="skills">
+                <div class="gridLeft">
+                    <li class="pct100">Microsoft Office</li>
+                    <li class="pct100">Google Suite</li>
+                    <li class="pct75">Git</li>
+                </div>
+                <div class="gridright">
+                    <li class="pct50">Vim</li>
+                    <li class="pct50">Linux</li>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <section class="sctn sctnOdd" id="exp">
+        <div class="content">
+            <h1>Education</h1>
+            <h2>"Nothing ever becomes real 'til it is experienced."</h2>
+            <h2>- John Keats</h2>
+            <hr class="horizontalLine">
+            <h3>Education</h3>
+            <div id="expGrid">
+                <div class="expLeft">
+                    <strong>New York University</strong>
+                    <p>2018 - Present</p>
+                    <span><i class="fas fa-map-marker-alt"></i> &nbsp; Brooklyn, NY</span>
+                </div>
+                <div class="expRight">
+                    <strong>B.S. in Computer Science</strong>
+                    <p>I am an undergraduate student at New York University, Tandon School of Engineering and pursuing my
+                        Bachelor of Science in Computer Science and minoring in Finance. I am currently a junior student 
+                        and will graduate around Summer 2021. </p>
+                </div>
+                <div class="expLeft">
+                    <strong>Tongji University</strong>
+                    <p>2016 - 2018</p>
+                    <span><i class="fas fa-map-marker-alt"></i> &nbsp; Shanghai, China</span>
+                </div>
+                <div class="expRight">
+                    <strong>B.S. in Computer Science</strong>
+                    <p>First two years of my college life in Tongji University. Transferred the major from physics to computer science. After that I transferred to NYU.</p>
+                </div>
+            </div>
+            <h3>Jobs</h3>
+            <div id="expGrid">
+                <div class="expLeft">
+                    <strong>NetEase</strong>
+                    <p>July 2017 - August 2017</p>
+                </div>
+                <div class="expRight">
+                    <strong>Web Crawler Intern</strong>
+                    <p>I was offered an intern position at NetEase Corpration during the summer of 2017. Description:</br>
+                        Used structured frameworks and scripts to crawl a batch of information (text and image) from websites.</br>
+                        Used SQL to organize and store the information.</br>
+                        On the basis of those frameworks and scripts, used Python to program a script to crawl videos.</br>
+                        Learned to analyze web code and how to break the log-in-verification defense. </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="sctn" id="contact">
+        <div class="content">
+            <h1>Contact Me</h1>
+            <h2>"There is no key to open the heart of another - except curiosity."</h2>
+            <h2>- Stefan Molyneux</h2>
+            <hr class="horizontalLine">
+            <div id="social">
+                <ul>
+                    
+                    <li>
+                        <a href="https://github.com/YuxiangChai" target="_blank">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yuxiang-chai-522466181/" target="_blank">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="horizontalLine">
+            <div id="footNote">
+                <h2>Thank you for visiting my website!</h2>
+            </div>
+        </div>
+    </section>
 
+    <script src="scripts.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/js/jquery.responsiveTabs.min.js"></script>
 
+</body>
 
-
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <script src="./js/navi.js"></script>
-    </body>
 </html>
