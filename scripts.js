@@ -1,13 +1,25 @@
+
+$(document).ready(function() {
+    $(".menu-icon").on("click", function() {
+          $("nav ul").toggleClass("showing");
+    });
+});
+
+// Scrolling Effect
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+          $('nav').addClass('black');
+    }
+
+    else {
+          $('nav').removeClass('black');
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function (event) {
+    $(".loaderBg").fadeOut();
 
-    // setTimeout(function () {
-    //     $("#loaderBg").fadeOut();
-    // }, 2000)
-    
-    $("#loaderBg").fadeOut();
-
-    // Type Writer
-    // array with texts to type in typewriter
     var dataText = ["Programmer.", "Designer.", "Student."];
 
     // type one text in the typwriter
@@ -16,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         // chekc if text isn't finished yet
         if (i < (text.length)) {
             // add next character to h1
-            document.getElementById("wlcmTW").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+            document.getElementById("typewriter").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
 
             // wait for a while and call this function again for next character
             setTimeout(function () {
@@ -47,51 +59,24 @@ document.addEventListener('DOMContentLoaded', function (event) {
     }
     // start the text animation
     StartTextAnimation(0);
+});
 
-    //nav bar
-    // $('a[href^="#"]').click(function (event) {
-    $('.sideNav').click(function (event) {
-        var id = $(this).attr("href");
-        var target = $(id).offset().top;
-        $('html, body').animate({
-            scrollTop: target
-        }, 500);
-        event.preventDefault();
+
+$(document).ready(function() {
+    $(window).scroll(function(event) {
+        let scroll = $(this).scrollTop();
+        let opacity = 1 - (scroll / 600);
+        if (opacity >= 0) {
+            $('.name').css('opacity', opacity);
+            $('.line').css('opacity', opacity);
+            $('.description').css('opacity', opacity);
+            $('#wlcmTW').css('opacity', opacity);
+        }
     });
+});
 
-    function getTargetTop(elem) {
-        var id = elem.attr("href");
-        var offset = 60;
-        return $(id).offset().top - offset;
-    }
-
-
-    $(window).scroll(function (e) {
-        isSelected($(window).scrollTop())
-    });
-
-    var sections = $('.sideNav');
-
-    function isSelected(scrolledTo) {
-
-        var threshold = 100;
-        var i;
-
-        for (i = 0; i < sections.length; i++) {
-            var section = $(sections[i]);
-            var target = getTargetTop(section);
-
-            if (scrolledTo > target - threshold && scrolledTo < target + threshold) {
-                sections.removeClass("active");
-                section.addClass("active");
-            }
-
-        };
-    }
-
-    $(function () {
-        $("#services-tabs").responsiveTabs({
-            animation: 'slide'
-        });
+$(function () {
+    $(".services-tabs").responsiveTabs({
+        animation: 'slide'
     });
 });
