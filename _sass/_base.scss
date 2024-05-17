@@ -203,9 +203,11 @@ ul.task-list input[type="checkbox"] {
 
 .profile.float-right {
   margin-left: 1rem;
+  margin-right: 1rem
 }
 
 .profile.float-left {
+  margin-left: 1rem;
   margin-right: 1rem;
 }
 
@@ -236,7 +238,6 @@ ul.task-list input[type="checkbox"] {
 }
 
 .clearfix {
-  width: 60%;
   padding-top: 20px;
   padding-left: 10px;
 }

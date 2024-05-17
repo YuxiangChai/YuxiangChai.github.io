@@ -6,8 +6,8 @@ permalink: /
 
 profile:
   align: right
-  image: yuxiang.JPG
-  image_circular: true # crops the image to make it circular
+  image: profile2.png
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>SHB 310,</p>
     <p>The Chinese University of Hong Kong</p>
