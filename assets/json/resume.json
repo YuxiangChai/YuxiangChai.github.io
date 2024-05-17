@@ -51,7 +51,7 @@
   "skills": [
     {
       "name": "Computer Science",
-      "icon": "fa-solid fa-hashtag",
+      "icon": "fa-solid fa-computer",
       "keywords": [
         "Deep Learning",
         "Computer Vision",
@@ -63,22 +63,22 @@
     {
       "language": "Mandarin",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "fa-solid fa-language"
     },
     {
       "language": "English",
       "fluency": "Fluent",
-      "icon": ""
+      "icon": "fa-solid fa-language"
     }
   ],
   "references": [
     {
       "name": "Professor Hongsheng Li",
-      "icon": "fa-solid fa-thumbtack"
+      "icon": "fa-solid fa-user-tie"
     },
     {
       "name": "Professor Chen Feng",
-      "icon": "fa-solid fa-thumbtack"
+      "icon": "fa-solid fa-user-tie"
     }
   ]
 }
