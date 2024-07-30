@@ -282,7 +282,7 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["paper", "debug"] # these tags will be displayed on the front page of your blog
+display_tags: ["paper", "debug", "notes"] # these tags will be displayed on the front page of your blog
 display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
