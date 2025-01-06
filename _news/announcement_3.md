@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Android Agent Arena** available on [link](https://yuxiangchai.github.io/Android-Agent-Arena/)
+**Android Agent Arena** available on [Arxiv](https://arxiv.org/pdf/2501.01149)
