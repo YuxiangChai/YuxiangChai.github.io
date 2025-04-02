@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-AMEX release on Arxiv! [Project link](https://yuxiangchai.github.io/AMEX/)
+**AMEX** release on Arxiv! [Project link](https://yuxiangchai.github.io/AMEX/)
