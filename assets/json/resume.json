@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Yuxiang Chai",
-    "Occupation": "PhD Student",
+    "occupation": "PhD Student",
     "image": "",
     "email": "seancyx@hotmail.com",
     "phone": "",
-    "url": "https://yuxiangchai.github.io"
+    "website": "https://yxchai.com"
   },
   "education": [
     {
       "institution": "The Chinese University of Hong Kong",
       "location": "Hong Kong",
-      "area": "Department of Electronic Engineering",
-      "studyType": "PhD",
+      "area": "MMLab",
+      "studyType": "PhD Student",
       "startDate": "2023-08",
       "endDate": "Present"
     },
@@ -20,7 +20,7 @@
       "institution": "New York University",
       "location": "New York",
       "area": "Courant Institute of Mathematical Sciences",
-      "studyType": "Master",
+      "studyType": "Master's Degree",
       "startDate": "2021-09",
       "endDate": "2023-01"
     },
@@ -28,7 +28,7 @@
       "institution": "New York University",
       "location": "New York",
       "area": "Tandon School of Engineering",
-      "studyType": "Bachelor",
+      "studyType": "Bachelor's Degree",
       "startDate": "2018-09",
       "endDate": "2021-05"
     }
@@ -55,7 +55,8 @@
       "keywords": [
         "Deep Learning",
         "Computer Vision",
-        "Machine Learning"
+        "Machine Learning",
+        "LLMs & MLLMs"
       ]
     }
   ],
@@ -74,10 +75,6 @@
   "references": [
     {
       "name": "Professor Hongsheng Li",
-      "icon": "fa-solid fa-user-tie"
-    },
-    {
-      "name": "Professor Chen Feng",
       "icon": "fa-solid fa-user-tie"
     }
   ]
