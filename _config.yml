@@ -9,13 +9,13 @@ middle_name:
 last_name: Chai
 email: seancyx@hotmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal Webpage.
+  Personal HomePage
 footer_text: > # Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: Yuxiang Chai, 柴宇翔 # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: logo.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://YuxiangChai.github.io # the base hostname & protocol for your site
+url: https://yxchai.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -131,7 +131,8 @@ permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
-  enabled: true
+  # enabled: true
+  enabled: false
 
 related_blog_posts:
   enabled: false
