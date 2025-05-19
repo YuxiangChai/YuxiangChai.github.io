@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://YuxiangChai.github.io/sitemap.xml
+Sitemap: https://yxchai.com/sitemap.xml
